@@ -1,5 +1,22 @@
 **Quiz Bot using Langchain and Next.js**
 
+**Description:**
+
+The creation of a chatbot intended to provide people with quizzes is often referred to 
+as a "Quiz Bot" project. Numerous platforms, websites, messaging applications, and 
+social media sites, can incorporate these quiz bots. They are frequently employed for 
+entertainment, education, or even consumer interaction and marketing in enterprises. 
+These initiatives can be used for a variety of things, from educational apps that help 
+students prepare for exams to marketing tools that engage clients with fun quizzes. 
+Depending on the project's particular objectives and target audience, a Quiz Bot's 
+implementation may differ.
+
+The Network Security Quiz Bot project is to develop a chatbot that can generate 
+network security quiz questions, offering different questions like multiple-choice, 
+true/false, open-ended, and running locally to ensure data privacy. This report outlines 
+the project's objectives, methods, and outcomes
+
+
 **Environment Requirements:**
 
 - Node.js and npm
