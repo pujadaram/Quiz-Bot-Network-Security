@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Quiz Bot using Langchain and Next.js**
 
-## Getting Started
+**Environment Requirements:**
 
-First, run the development server:
+- Node.js and npm
+- Next.js
+- (Other dependencies specified in `package.json`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Installation** :
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash git clone https://github.com/your-username/quiz-bot.git
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Change into the project directory:
 
-## Learn More
+cd quiz-bot
 
-To learn more about Next.js, take a look at the following resources:
+1. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Create a **.env** file in the root of the project and add your OpenAI API key:
 
-## Deploy on Vercel
+NEXT\_PUBLIC\_OPENAI\_API\_KEY=your\_openai\_api\_key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Running the Application:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**npm run dev**
+
+The application will be accessible at [http://localhost:3000](http://localhost:3000/).
+
+**Flow of Execution:**
+
+1. Select a question type from the dropdown.
+2. Click "Generate Question" to get a trivia question based on the selected category.
+3. Enter your answer in the text input.
+4. Click "Submit" to evaluate your answer and receive feedback.
+
+**Issues and Solutions:**
+
+- **Known Issues:**
+
+  1. _Infinite Loop Bug:_
+
+  - **Issue:** Sometimes, the bot gets stuck in an infinite loop while generating questions.
+  - **Solution:** To break the loop, try refreshing the page or restarting the application.
+
+  2. _OpenAI API Rate Limiting:_
+
+  - **Issue:** Experiencing rate-limiting issues with the OpenAI API.
+  - **Solution:** Implement a caching mechanism to store previous responses and reduce API calls. Also, check OpenAI API documentation for rate-limiting guidelines.
+- **Solutions in Progress:**
+
+  1. _Enhancing Question Variety:_
+
+  - **Issue:** Limited variety in generated questions.
+  - **Solution:** Currently working on expanding the question generation algorithm to provide a more diverse set of questions.
+
+  2. _Feedback Clarity:_
+
+  - **Issue:** User feedback is sometimes unclear or generic.
+  - **Solution:** Refining the feedback generation logic to offer more specific and helpful insights to users.
+
+**Suggestions and Feedback:**
+
+- **User Feedback:**
+
+  1. _Engaging User Interface:_
+
+  - **Feedback:** The UI is clean but could be more visually engaging.
+  - **Suggestion:** Consider adding animations or themed visuals to enhance the overall user experience.
+- **Future Enhancements:**
+
+  1. _Integration with Learning Resources:_
+
+  - **Feedback:** Linking to external learning resources would be beneficial.
+  - **Suggestion:** Integrate links to relevant articles, tutorials, or documentation to provide users with additional learning opportunities.
